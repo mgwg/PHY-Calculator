@@ -1,0 +1,16 @@
+C:\Users\Maggie\Documents\GitHub\Calculator\PHY_Calc\bin\Release\netcoreapp3.1\PHY_Calculator.exe
+C:\Users\Maggie\Documents\GitHub\Calculator\PHY_Calc\bin\Release\netcoreapp3.1\PHY_Calculator.deps.json
+C:\Users\Maggie\Documents\GitHub\Calculator\PHY_Calc\bin\Release\netcoreapp3.1\PHY_Calculator.runtimeconfig.json
+C:\Users\Maggie\Documents\GitHub\Calculator\PHY_Calc\bin\Release\netcoreapp3.1\PHY_Calculator.runtimeconfig.dev.json
+C:\Users\Maggie\Documents\GitHub\Calculator\PHY_Calc\bin\Release\netcoreapp3.1\PHY_Calculator.dll
+C:\Users\Maggie\Documents\GitHub\Calculator\PHY_Calc\bin\Release\netcoreapp3.1\PHY_Calculator.pdb
+C:\Users\Maggie\Documents\GitHub\Calculator\PHY_Calc\obj\Release\netcoreapp3.1\PHY_Calculator.csprojAssemblyReference.cache
+C:\Users\Maggie\Documents\GitHub\Calculator\PHY_Calc\obj\Release\netcoreapp3.1\PHY_Calc.Form1.resources
+C:\Users\Maggie\Documents\GitHub\Calculator\PHY_Calc\obj\Release\netcoreapp3.1\PHY_Calculator.Properties.Resources.resources
+C:\Users\Maggie\Documents\GitHub\Calculator\PHY_Calc\obj\Release\netcoreapp3.1\PHY_Calculator.csproj.GenerateResource.cache
+C:\Users\Maggie\Documents\GitHub\Calculator\PHY_Calc\obj\Release\netcoreapp3.1\PHY_Calculator.AssemblyInfoInputs.cache
+C:\Users\Maggie\Documents\GitHub\Calculator\PHY_Calc\obj\Release\netcoreapp3.1\PHY_Calculator.AssemblyInfo.cs
+C:\Users\Maggie\Documents\GitHub\Calculator\PHY_Calc\obj\Release\netcoreapp3.1\PHY_Calculator.csproj.CoreCompileInputs.cache
+C:\Users\Maggie\Documents\GitHub\Calculator\PHY_Calc\obj\Release\netcoreapp3.1\PHY_Calculator.dll
+C:\Users\Maggie\Documents\GitHub\Calculator\PHY_Calc\obj\Release\netcoreapp3.1\PHY_Calculator.pdb
+C:\Users\Maggie\Documents\GitHub\Calculator\PHY_Calc\obj\Release\netcoreapp3.1\PHY_Calculator.genruntimeconfig.cache

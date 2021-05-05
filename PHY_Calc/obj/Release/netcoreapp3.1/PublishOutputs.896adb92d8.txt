@@ -1,0 +1,5 @@
+C:\Users\Maggie\Documents\eeeee\PHY_Calculator.exe
+C:\Users\Maggie\Documents\eeeee\PHY_Calculator.dll
+C:\Users\Maggie\Documents\eeeee\PHY_Calculator.deps.json
+C:\Users\Maggie\Documents\eeeee\PHY_Calculator.runtimeconfig.json
+C:\Users\Maggie\Documents\eeeee\PHY_Calculator.pdb
