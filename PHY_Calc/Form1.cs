@@ -73,12 +73,11 @@ namespace PHY_Calc
 
         private void clickEqual(object sender, EventArgs e) //evaluate operation
         {
-            if (op.Length == 1)
+            if (op.Length == 1) //don't change display for sqrt and ln
             {
                 pastOp.Text += (" " + input.Text);
             }
-            //don't do anything otherwise
-
+            
             switch (op)
             {
                 case "+":
@@ -105,15 +104,15 @@ namespace PHY_Calc
                 default:
                     break;
             }
-
-            if (op == "" & input.Text.Contains("E"))
+            
+            if (input.Text.Length > 12 & input.Text.Contains("E")) // round to 8 significant digits if expressed in scientific notation
             {
-                input.Text = (Double.Parse(input.Text)).ToString();
+                int index = input.Text.IndexOf("E");
+                input.Text = Math.Round(Double.Parse(input.Text.Substring(0, index)), 8).ToString() + input.Text.Substring(index, input.Text.Length - index);
             }
 
             prevAns = 0;
             op = "";
-            
         }
 
         private void changeSign(object sender, EventArgs e) //change sign of input
@@ -160,43 +159,43 @@ namespace PHY_Calc
             switch(cnst)
             {
                 case "g":
-                    input.Text = (9.81).ToString();
+                    input.Text = "9.81";
                     break;
                 case "c":
-                    input.Text = (2.9979E8).ToString();
+                    input.Text = "2.9979E8";
                     break;
                 case "R":
-                    input.Text = (8.314).ToString();
+                    input.Text = "8.314";
                     break;
                 case "N":
-                    input.Text = (6.022E24).ToString();
+                    input.Text = "6.022E24";
                     break;
                 case "K":
-                    input.Text = (1.3806E-23).ToString();
+                    input.Text = "1.3806E-23";
                     break;
                 case "eV":
-                    input.Text = (1.6022E-19).ToString();
+                    input.Text = "1.6022E-19";
                     break;
                 case "q_e":
-                    input.Text = (1.6022E-19).ToString();
+                    input.Text = "1.6022E-19";
                     break;
                 case "m_e":
-                    input.Text = (9.1094E-31).ToString();
+                    input.Text = "9.1094E-31";
                     break;
                 case "m_p":
-                    input.Text = (1.6726E-27).ToString();
+                    input.Text = "1.6726E-27";
                     break;
                 case "h":
-                    input.Text = (6.6261E-34).ToString();
+                    input.Text = "6.6261E-34";
                     break;
                 case "ħ":
-                    input.Text = (1.0546E-34).ToString();
+                    input.Text = "1.0546E-34";
                     break;
                 case "π":
-                    input.Text = (3.1416).ToString();
+                    input.Text = "3.1416";
                     break;
                 case "e":
-                    input.Text = (prevAns + Double.Parse(input.Text)).ToString();
+                    input.Text = "2.71828";
                     break;
                 default:
                     break;
