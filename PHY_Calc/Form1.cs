@@ -1,4 +1,4 @@
-﻿using PHY_Calc_Logic;
+﻿using PHY_Calc_Lib;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

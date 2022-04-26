@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PHY_Calc_Logic\PHY_Calc_Logic.csproj" />
+    <ProjectReference Include="..\PHY_Calc_Lib\PHY_Calc_Lib.csproj" />
   </ItemGroup>
 
   <ItemGroup>
