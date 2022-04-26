@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PHY_Calc_Logic;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,16 +13,16 @@ namespace PHY_Calc
 {
     public partial class Form1 : Form
     {
-        Double prevAns = 0;
-        String op = "";
-        bool isOpPerformed = false;
+        private double prevAns = 0;
+        private string op = "";
+        private bool isOpPerformed = false;
         
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void clickNum(object sender, EventArgs e) //enter a number
+        private void ClickNum(object sender, EventArgs e) //enter a number
         {
             Button numButton = (Button)sender;
 
@@ -31,7 +32,7 @@ namespace PHY_Calc
                 isOpPerformed = false;
             }
 
-            if ((numButton.Text == "." & input.Text.Contains(".")) || numButton.Text == "E" & input.Text.Contains("E")) //avoid adding many decimal points or E's
+            if ((numButton.Text == "." & input.Text.Contains('.')) || numButton.Text == "E" & input.Text.Contains('E')) //avoid adding many decimal points or E's
             {
                 input.Text = input.Text;
             }
@@ -42,7 +43,7 @@ namespace PHY_Calc
 
         }
 
-        private void clickOp(object sender, EventArgs e) //enter an operation
+        private void ClickOp(object sender, EventArgs e) //enter an operation
         {
             Button opButton = (Button)sender;
 
@@ -71,7 +72,7 @@ namespace PHY_Calc
             }
         }
 
-        private void clickEqual(object sender, EventArgs e) //evaluate operation
+        private void ClickEqual(object sender, EventArgs e) //evaluate operation
         {
             if (op.Length == 1) //don't change display for sqrt and ln
             {
@@ -105,7 +106,7 @@ namespace PHY_Calc
                     break;
             }
             
-            if (input.Text.Length > 12 & input.Text.Contains("E")) // round to 8 significant digits if expressed in scientific notation
+            if (input.Text.Length > 12 & input.Text.Contains('E')) // round to 8 significant digits if expressed in scientific notation
             {
                 int index = input.Text.IndexOf("E");
                 input.Text = Math.Round(Double.Parse(input.Text.Substring(0, index)), 8).ToString() + input.Text.Substring(index, input.Text.Length - index);
@@ -115,7 +116,7 @@ namespace PHY_Calc
             op = "";
         }
 
-        private void changeSign(object sender, EventArgs e) //change sign of input
+        private void ChangeSign(object sender, EventArgs e) //change sign of input
         {
             prevAns = Double.Parse(input.Text)*-1;
             input.Text = prevAns.ToString();
@@ -123,7 +124,7 @@ namespace PHY_Calc
             prevAns = 0;
         }
 
-        private void clear(object sender, EventArgs e) //clear past inputs
+        private void Clear(object sender, EventArgs e) //clear past inputs
         {
             input.Text = "0";
             prevAns = 0;
@@ -131,7 +132,7 @@ namespace PHY_Calc
             pastOp.Text = "";
         }
 
-        private void delete(object sender, EventArgs e) //delete last input
+        private void Delete(object sender, EventArgs e) //delete last input
         {
             if (isOpPerformed == true) //if last input was operator
             {
@@ -146,7 +147,7 @@ namespace PHY_Calc
             }
         }
 
-        private void clickCnst(object sender, EventArgs e)
+        private void ClickCnst(object sender, EventArgs e)
         {
             Button cnstButton = (Button)sender;
 
@@ -159,43 +160,43 @@ namespace PHY_Calc
             switch(cnst)
             {
                 case "g":
-                    input.Text = "9.81";
+                    input.Text = MathConstants.G;
                     break;
                 case "c":
-                    input.Text = "2.9979E8";
+                    input.Text = MathConstants.C;
                     break;
                 case "R":
-                    input.Text = "8.314";
+                    input.Text = MathConstants.R;
                     break;
                 case "N":
-                    input.Text = "6.022E24";
+                    input.Text = MathConstants.N; 
                     break;
                 case "K":
-                    input.Text = "1.3806E-23";
+                    input.Text = MathConstants.K; 
                     break;
                 case "eV":
-                    input.Text = "1.6022E-19";
+                    input.Text = MathConstants.eV;
                     break;
                 case "q_e":
-                    input.Text = "1.6022E-19";
+                    input.Text = MathConstants.q_e;
                     break;
                 case "m_e":
-                    input.Text = "9.1094E-31";
+                    input.Text = MathConstants.m_e; 
                     break;
                 case "m_p":
-                    input.Text = "1.6726E-27";
+                    input.Text = MathConstants.m_p;
                     break;
                 case "h":
-                    input.Text = "6.6261E-34";
+                    input.Text = MathConstants.h;
                     break;
                 case "ħ":
-                    input.Text = "1.0546E-34";
+                    input.Text = MathConstants.ħ; 
                     break;
                 case "π":
-                    input.Text = "3.1416";
+                    input.Text = MathConstants.PI;
                     break;
                 case "e":
-                    input.Text = "2.71828";
+                    input.Text = MathConstants.e;
                     break;
                 default:
                     break;
