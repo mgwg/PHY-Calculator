@@ -85,7 +85,7 @@ namespace PHY_Calc
             this.button7.TabIndex = 0;
             this.button7.Text = "7";
             this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.clickNum);
+            this.button7.Click += new System.EventHandler(this.ClickNum);
             // 
             // button3
             // 
@@ -101,7 +101,7 @@ namespace PHY_Calc
             this.button3.TabIndex = 1;
             this.button3.Text = "3";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.clickNum);
+            this.button3.Click += new System.EventHandler(this.ClickNum);
             // 
             // button2
             // 
@@ -117,7 +117,7 @@ namespace PHY_Calc
             this.button2.TabIndex = 2;
             this.button2.Text = "2";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.clickNum);
+            this.button2.Click += new System.EventHandler(this.ClickNum);
             // 
             // buttonOne
             // 
@@ -133,7 +133,7 @@ namespace PHY_Calc
             this.buttonOne.TabIndex = 3;
             this.buttonOne.Text = "1";
             this.buttonOne.UseVisualStyleBackColor = false;
-            this.buttonOne.Click += new System.EventHandler(this.clickNum);
+            this.buttonOne.Click += new System.EventHandler(this.ClickNum);
             // 
             // button6
             // 
@@ -149,7 +149,7 @@ namespace PHY_Calc
             this.button6.TabIndex = 4;
             this.button6.Text = "6";
             this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.clickNum);
+            this.button6.Click += new System.EventHandler(this.ClickNum);
             // 
             // button5
             // 
@@ -165,7 +165,7 @@ namespace PHY_Calc
             this.button5.TabIndex = 5;
             this.button5.Text = "5";
             this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.clickNum);
+            this.button5.Click += new System.EventHandler(this.ClickNum);
             // 
             // button4
             // 
@@ -181,7 +181,7 @@ namespace PHY_Calc
             this.button4.TabIndex = 6;
             this.button4.Text = "4";
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.clickNum);
+            this.button4.Click += new System.EventHandler(this.ClickNum);
             // 
             // button9
             // 
@@ -197,7 +197,7 @@ namespace PHY_Calc
             this.button9.TabIndex = 7;
             this.button9.Text = "9";
             this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.clickNum);
+            this.button9.Click += new System.EventHandler(this.ClickNum);
             // 
             // button8
             // 
@@ -213,7 +213,7 @@ namespace PHY_Calc
             this.button8.TabIndex = 8;
             this.button8.Text = "8";
             this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.clickNum);
+            this.button8.Click += new System.EventHandler(this.ClickNum);
             // 
             // button0
             // 
@@ -229,7 +229,7 @@ namespace PHY_Calc
             this.button0.TabIndex = 11;
             this.button0.Text = "0";
             this.button0.UseVisualStyleBackColor = false;
-            this.button0.Click += new System.EventHandler(this.clickNum);
+            this.button0.Click += new System.EventHandler(this.ClickNum);
             // 
             // buttonDec
             // 
@@ -244,7 +244,7 @@ namespace PHY_Calc
             this.buttonDec.TabIndex = 10;
             this.buttonDec.Text = ".";
             this.buttonDec.UseVisualStyleBackColor = false;
-            this.buttonDec.Click += new System.EventHandler(this.clickNum);
+            this.buttonDec.Click += new System.EventHandler(this.ClickNum);
             // 
             // buttonDEL
             // 
@@ -260,7 +260,7 @@ namespace PHY_Calc
             this.buttonDEL.TabIndex = 9;
             this.buttonDEL.Text = "DEL";
             this.buttonDEL.UseVisualStyleBackColor = false;
-            this.buttonDEL.Click += new System.EventHandler(this.delete);
+            this.buttonDEL.Click += new System.EventHandler(this.Delete);
             // 
             // buttonAC
             // 
@@ -276,7 +276,7 @@ namespace PHY_Calc
             this.buttonAC.TabIndex = 14;
             this.buttonAC.Text = "AC";
             this.buttonAC.UseVisualStyleBackColor = false;
-            this.buttonAC.Click += new System.EventHandler(this.clear);
+            this.buttonAC.Click += new System.EventHandler(this.Clear);
             // 
             // buttonE
             // 
@@ -291,7 +291,7 @@ namespace PHY_Calc
             this.buttonE.TabIndex = 13;
             this.buttonE.Text = "E";
             this.buttonE.UseVisualStyleBackColor = false;
-            this.buttonE.Click += new System.EventHandler(this.clickNum);
+            this.buttonE.Click += new System.EventHandler(this.ClickNum);
             // 
             // buttonSign
             // 
@@ -307,7 +307,7 @@ namespace PHY_Calc
             this.buttonSign.TabIndex = 12;
             this.buttonSign.Text = "±";
             this.buttonSign.UseVisualStyleBackColor = false;
-            this.buttonSign.Click += new System.EventHandler(this.changeSign);
+            this.buttonSign.Click += new System.EventHandler(this.ChangeSign);
             // 
             // buttonDiv
             // 
@@ -323,7 +323,7 @@ namespace PHY_Calc
             this.buttonDiv.TabIndex = 19;
             this.buttonDiv.Text = "÷";
             this.buttonDiv.UseVisualStyleBackColor = false;
-            this.buttonDiv.Click += new System.EventHandler(this.clickOp);
+            this.buttonDiv.Click += new System.EventHandler(this.ClickOp);
             // 
             // buttonEqual
             // 
@@ -339,7 +339,7 @@ namespace PHY_Calc
             this.buttonEqual.TabIndex = 18;
             this.buttonEqual.Text = "=";
             this.buttonEqual.UseVisualStyleBackColor = false;
-            this.buttonEqual.Click += new System.EventHandler(this.clickEqual);
+            this.buttonEqual.Click += new System.EventHandler(this.ClickEqual);
             // 
             // buttonMult
             // 
@@ -355,7 +355,7 @@ namespace PHY_Calc
             this.buttonMult.TabIndex = 17;
             this.buttonMult.Text = "×";
             this.buttonMult.UseVisualStyleBackColor = false;
-            this.buttonMult.Click += new System.EventHandler(this.clickOp);
+            this.buttonMult.Click += new System.EventHandler(this.ClickOp);
             // 
             // buttonSubtract
             // 
@@ -371,7 +371,7 @@ namespace PHY_Calc
             this.buttonSubtract.TabIndex = 16;
             this.buttonSubtract.Text = "−";
             this.buttonSubtract.UseVisualStyleBackColor = false;
-            this.buttonSubtract.Click += new System.EventHandler(this.clickOp);
+            this.buttonSubtract.Click += new System.EventHandler(this.ClickOp);
             // 
             // buttonAdd
             // 
@@ -387,7 +387,7 @@ namespace PHY_Calc
             this.buttonAdd.TabIndex = 15;
             this.buttonAdd.Text = "+";
             this.buttonAdd.UseVisualStyleBackColor = false;
-            this.buttonAdd.Click += new System.EventHandler(this.clickOp);
+            this.buttonAdd.Click += new System.EventHandler(this.ClickOp);
             // 
             // input
             // 
@@ -457,7 +457,7 @@ namespace PHY_Calc
             this.button_exp.TabIndex = 27;
             this.button_exp.Text = "^";
             this.button_exp.UseVisualStyleBackColor = false;
-            this.button_exp.Click += new System.EventHandler(this.clickOp);
+            this.button_exp.Click += new System.EventHandler(this.ClickOp);
             // 
             // button_sqrt
             // 
@@ -473,7 +473,7 @@ namespace PHY_Calc
             this.button_sqrt.TabIndex = 28;
             this.button_sqrt.Text = "sqrt";
             this.button_sqrt.UseVisualStyleBackColor = false;
-            this.button_sqrt.Click += new System.EventHandler(this.clickOp);
+            this.button_sqrt.Click += new System.EventHandler(this.ClickOp);
             // 
             // button_e
             // 
@@ -489,7 +489,7 @@ namespace PHY_Calc
             this.button_e.TabIndex = 34;
             this.button_e.Text = "e";
             this.button_e.UseVisualStyleBackColor = false;
-            this.button_e.Click += new System.EventHandler(this.clickCnst);
+            this.button_e.Click += new System.EventHandler(this.ClickCnst);
             // 
             // button_ln
             // 
@@ -505,7 +505,7 @@ namespace PHY_Calc
             this.button_ln.TabIndex = 35;
             this.button_ln.Text = "ln";
             this.button_ln.UseVisualStyleBackColor = false;
-            this.button_ln.Click += new System.EventHandler(this.clickOp);
+            this.button_ln.Click += new System.EventHandler(this.ClickOp);
             // 
             // button_hbar
             // 
@@ -521,7 +521,7 @@ namespace PHY_Calc
             this.button_hbar.TabIndex = 41;
             this.button_hbar.Text = "ħ";
             this.button_hbar.UseVisualStyleBackColor = false;
-            this.button_hbar.Click += new System.EventHandler(this.clickCnst);
+            this.button_hbar.Click += new System.EventHandler(this.ClickCnst);
             // 
             // button_pi
             // 
@@ -537,7 +537,7 @@ namespace PHY_Calc
             this.button_pi.TabIndex = 40;
             this.button_pi.Text = "π";
             this.button_pi.UseVisualStyleBackColor = false;
-            this.button_pi.Click += new System.EventHandler(this.clickCnst);
+            this.button_pi.Click += new System.EventHandler(this.ClickCnst);
             // 
             // button_h
             // 
@@ -553,7 +553,7 @@ namespace PHY_Calc
             this.button_h.TabIndex = 39;
             this.button_h.Text = "h";
             this.button_h.UseVisualStyleBackColor = false;
-            this.button_h.Click += new System.EventHandler(this.clickCnst);
+            this.button_h.Click += new System.EventHandler(this.ClickCnst);
             // 
             // button_m_p
             // 
@@ -569,7 +569,7 @@ namespace PHY_Calc
             this.button_m_p.TabIndex = 38;
             this.button_m_p.Text = "m_p";
             this.button_m_p.UseVisualStyleBackColor = false;
-            this.button_m_p.Click += new System.EventHandler(this.clickCnst);
+            this.button_m_p.Click += new System.EventHandler(this.ClickCnst);
             // 
             // button_m_e
             // 
@@ -585,7 +585,7 @@ namespace PHY_Calc
             this.button_m_e.TabIndex = 37;
             this.button_m_e.Text = "m_e";
             this.button_m_e.UseVisualStyleBackColor = false;
-            this.button_m_e.Click += new System.EventHandler(this.clickCnst);
+            this.button_m_e.Click += new System.EventHandler(this.ClickCnst);
             // 
             // button_q_e
             // 
@@ -601,7 +601,7 @@ namespace PHY_Calc
             this.button_q_e.TabIndex = 36;
             this.button_q_e.Text = "q_e";
             this.button_q_e.UseVisualStyleBackColor = false;
-            this.button_q_e.Click += new System.EventHandler(this.clickCnst);
+            this.button_q_e.Click += new System.EventHandler(this.ClickCnst);
             // 
             // button_K
             // 
@@ -617,7 +617,7 @@ namespace PHY_Calc
             this.button_K.TabIndex = 47;
             this.button_K.Text = "K";
             this.button_K.UseVisualStyleBackColor = false;
-            this.button_K.Click += new System.EventHandler(this.clickCnst);
+            this.button_K.Click += new System.EventHandler(this.ClickCnst);
             // 
             // button_eV
             // 
@@ -634,7 +634,7 @@ namespace PHY_Calc
             this.button_eV.TabIndex = 46;
             this.button_eV.Text = "eV";
             this.button_eV.UseVisualStyleBackColor = false;
-            this.button_eV.Click += new System.EventHandler(this.clickCnst);
+            this.button_eV.Click += new System.EventHandler(this.ClickCnst);
             // 
             // button_N
             // 
@@ -650,7 +650,7 @@ namespace PHY_Calc
             this.button_N.TabIndex = 45;
             this.button_N.Text = "N";
             this.button_N.UseVisualStyleBackColor = false;
-            this.button_N.Click += new System.EventHandler(this.clickCnst);
+            this.button_N.Click += new System.EventHandler(this.ClickCnst);
             // 
             // button_R
             // 
@@ -666,7 +666,7 @@ namespace PHY_Calc
             this.button_R.TabIndex = 44;
             this.button_R.Text = "R";
             this.button_R.UseVisualStyleBackColor = false;
-            this.button_R.Click += new System.EventHandler(this.clickCnst);
+            this.button_R.Click += new System.EventHandler(this.ClickCnst);
             // 
             // button_c
             // 
@@ -682,7 +682,7 @@ namespace PHY_Calc
             this.button_c.TabIndex = 43;
             this.button_c.Text = "c";
             this.button_c.UseVisualStyleBackColor = false;
-            this.button_c.Click += new System.EventHandler(this.clickCnst);
+            this.button_c.Click += new System.EventHandler(this.ClickCnst);
             // 
             // button_g
             // 
@@ -698,7 +698,7 @@ namespace PHY_Calc
             this.button_g.TabIndex = 42;
             this.button_g.Text = "g";
             this.button_g.UseVisualStyleBackColor = false;
-            this.button_g.Click += new System.EventHandler(this.clickCnst);
+            this.button_g.Click += new System.EventHandler(this.ClickCnst);
             // 
             // Form1
             // 

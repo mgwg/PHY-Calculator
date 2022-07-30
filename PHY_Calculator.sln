@@ -1,0 +1,44 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PHY_Calculator", "PHY_Calc\PHY_Calculator.csproj", "{202643CF-A6CD-4FF4-9C17-093FB603BB5F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C2628878-67A9-4A2D-8813-498E5D9AC853} = {C2628878-67A9-4A2D-8813-498E5D9AC853}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PHY_Calc_Lib", "PHY_Calc_Lib\PHY_Calc_Lib.csproj", "{C2628878-67A9-4A2D-8813-498E5D9AC853}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PHY_Calc_Test", "PHY_Calc_Test\PHY_Calc_Test.csproj", "{DF33B622-CA00-4CB9-B033-CAB38E94FF1D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FC9F2CE5-FA3C-46A3-8851-A34E6C924ACB}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{202643CF-A6CD-4FF4-9C17-093FB603BB5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{202643CF-A6CD-4FF4-9C17-093FB603BB5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{202643CF-A6CD-4FF4-9C17-093FB603BB5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{202643CF-A6CD-4FF4-9C17-093FB603BB5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2628878-67A9-4A2D-8813-498E5D9AC853}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2628878-67A9-4A2D-8813-498E5D9AC853}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2628878-67A9-4A2D-8813-498E5D9AC853}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2628878-67A9-4A2D-8813-498E5D9AC853}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF33B622-CA00-4CB9-B033-CAB38E94FF1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF33B622-CA00-4CB9-B033-CAB38E94FF1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF33B622-CA00-4CB9-B033-CAB38E94FF1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF33B622-CA00-4CB9-B033-CAB38E94FF1D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB3B34E2-2F31-4AA2-AE7D-2BF48CED195E}
+	EndGlobalSection
+EndGlobal
